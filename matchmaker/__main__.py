@@ -1,4 +1,4 @@
-"""Run with: python -m matchmaker"""
+"""run with: python -m matchmaker"""
 import os
 
 try:

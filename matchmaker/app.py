@@ -1,4 +1,3 @@
-"""Game-agnostic 1v1 matchmaking API. See README.md for the trust model."""
 from __future__ import annotations
 
 import hashlib

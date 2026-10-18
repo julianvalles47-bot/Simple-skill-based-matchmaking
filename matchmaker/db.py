@@ -1,4 +1,4 @@
-"""SQLite storage helpers for the Indie Matchmaker prototype."""
+"""SQLite storage helpers (DO NOT FORGET THIS DUMBASS)"""
 from __future__ import annotations
 
 import os

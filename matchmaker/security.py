@@ -1,4 +1,4 @@
-"""Small HMAC token helpers; keep the signing key on the server only."""
+"""Small HMAC token helpers"""
 from __future__ import annotations
 
 import base64
