@@ -1,0 +1,16 @@
+services:
+  matchmaker:
+    build: .
+    ports:
+      - "127.0.0.1:${MATCHMAKER_PORT:-8000}:8000"
+    environment:
+      MATCHMAKER_ENV: ${MATCHMAKER_ENV:-development}
+      MATCHMAKER_HOST: 0.0.0.0
+      MATCHMAKER_PORT: 8000
+      MATCHMAKER_DB: /data/matchmaker.sqlite3
+      MATCHMAKER_CORS_ORIGINS: ${MATCHMAKER_CORS_ORIGINS:-*}
+      MATCHMAKER_SERVER_KEY: ${MATCHMAKER_SERVER_KEY:-dev-only-not-a-secret}
+      MATCHMAKER_SECRET_KEY: ${MATCHMAKER_SECRET_KEY:-development-only-change-this-key}
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
